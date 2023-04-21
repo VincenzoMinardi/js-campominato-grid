@@ -11,37 +11,36 @@ const eleGrid = document.querySelector('.grid');
 console.log(eleGrid);
 
 
-// Generiamo la griglia desiderata
+
+// Diamo la funziona al bottone dell'html per generare la tabella
+
+eleBtn.addEventListener('click', function(){
+    // Generiamo la griglia desiderata
  createGrid (100, eleGrid)
 
-// applichiamo gli event listener alla griglia che contiene le celle
-
-const listCells = document.querySelectorAll('.cell');
-for (let i = 0; i < listCells.length; i++) {
-	const cell = listCells[i];
-	cell.addEventListener('click',
-		function colorCell() {
-			console.log(this);
-			this.classList.toggle('clicked');
-		}
-	);
-}
-
-
-
-// FUNCTION DEFINITIONS
-
-function createGrid(numberCell, eleContainer){
-    for (let i= 0; i < numberCell; i++){
-        eleContainer.innerHTML += '<div class="cell"></div>';
-    }
-    
-}
-
-function numberCell (number){
-    for (let i = 1; i >= 100; i++){
-        cell.innerHTML += `<div class ="cell">${number}</div>`
-    }
-}
+ // applichiamo gli event listener alla griglia che contiene le celle
+ 
+ const listCells = document.querySelectorAll('.cell');
+ for (let i = 0; i < listCells.length; i++) {
+     const cell = listCells[i];
+     cell.addEventListener('click',
+         function colorCell() {
+             console.log(this);
+             this.classList.toggle('clicked');
+         }
+     );
+ }
+ 
+ 
+ 
+ // FUNCTION DEFINITIONS
+ 
+ function createGrid(numberCell, eleContainer){
+     for (let i= 0; i < numberCell; i++){
+         eleContainer.innerHTML += `<div class="cell">${i+1}</div>`;
+     }
+     
+ }
+});
 
 
