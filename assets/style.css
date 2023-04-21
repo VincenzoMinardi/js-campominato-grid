@@ -33,7 +33,8 @@ button{
 }
 
 main{
-    background-color: aquamarine;
+    background-image: url(../img/immagine-fissa-si-muove.jpg);
+    
     margin-top: 2rem;
     
 }
