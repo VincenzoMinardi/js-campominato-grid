@@ -9,15 +9,23 @@ const eleBtn = document.querySelector('#btn-play');
 console.log(eleBtn);
 const eleGrid = document.querySelector('.grid');
 console.log(eleGrid);
+const eleEasy =document.querySelector ('#easy')
+console.log(eleEasy)
+const eleHard =document.querySelector ('#hard')
+console.log(eleHard)
+const eleCrazy =document.querySelector ('#crazy')
+console.log(eleCrazy)
+
 
 
 
 // Diamo la funziona al bottone dell'html per generare la tabella
 
 eleBtn.addEventListener('click', function(){
+
     
     // Generiamo la griglia desiderata
- createGrid (100, eleGrid)
+    createGrid (100, eleGrid)
 
  // applichiamo gli event listener alla griglia che contiene le celle
  
@@ -31,8 +39,6 @@ eleBtn.addEventListener('click', function(){
          }
      );
  }
- 
- 
  
  // FUNCTION DEFINITIONS
  
