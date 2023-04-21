@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.cont-flex{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img{
+    height: 20px;
+    width: 20px;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+
+button{
+    margin-top: 1rem;
+    height: 30px;
+    width: 80px;
+}
