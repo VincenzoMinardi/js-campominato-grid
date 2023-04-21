@@ -33,7 +33,7 @@ button{
 }
 
 main{
-    background-image: url(../img/immagine-fissa-si-muove.jpg);
+  background-color:cornsilk ;
     
     margin-top: 2rem;
     
@@ -68,4 +68,10 @@ footer{
 
 .clicked{
     background-color: yellow;
+}
+
+.bottone{
+    width: 100px;
+    height: 30px;
+    
 }

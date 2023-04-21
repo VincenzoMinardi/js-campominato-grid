@@ -15,6 +15,7 @@ console.log(eleGrid);
 // Diamo la funziona al bottone dell'html per generare la tabella
 
 eleBtn.addEventListener('click', function(){
+    
     // Generiamo la griglia desiderata
  createGrid (100, eleGrid)
 
